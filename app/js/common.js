@@ -1,5 +1,5 @@
 $(function() {
 
-	// Custom JS
+    $("#sticker").sticky({topSpacing:0});
 
 });
