@@ -124,6 +124,7 @@ header
 
 .analytics-left__content
   width: 70%
+  float: left
   .first-block
     padding: 45px 260px 50px 124px
     background-color: $gray
@@ -209,6 +210,47 @@ header
     img
       float: left
       margin-right: 20px
+.main-menu
+  width: 30%
+  float: right
+.menu-inner
+  list-style: none
+  padding-right: 100px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  li
+    a
+      display: block
+      color: $black
+      font-size: 14px
+      font-weight: 300
+      padding-left: 30px
+      text-align: right
+      width: 176px;
+      padding-right: 10px
+      height: 48px
+      line-height: 60px
+    .active
+      background: $yellov
+      font-size: 18px
+      font-weight: 600
+      text-transform: uppercase
+      position: relative
+      line-height: 60px
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        background-image: url(../img/strip-big.png)
+        width: 36px
+        height: 51px
+        top: -15px
+        left: 20px
+        background-size: contain
+        background-repeat: no-repeat
+
+
 //ROL
 .rol
 	background-color: $yellov
