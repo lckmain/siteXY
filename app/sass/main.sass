@@ -1,0 +1,214 @@
+$output-bourbon-deprecation-warnings: false //Ждём обновления node-bourbon до 5-й версии
+
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+  font-family: 'Neris-Light', sans-serif
+	overflow-x: hidden
+
+//FONTS HELPERS
+.Thin
+  font-family: "Neris-Thin", sans-serif
+.Light
+  font-family: "Neris-Light", sans-serif
+.Lightitalic
+  font-family: "Neris-Lightitalic", sans-serif
+.SemiBold
+  font-family: "Neris-SemiBold", sans-serif
+  font-weight: 600
+.Black
+  font-family: "Neris-Black", sans-serif
+
+.text-center
+  text-align: center
+
+header
+  .left-top_block
+    float: left
+    width: 50%
+    padding: 50px 0 400px 45px
+    background-image: url(../img/xy-top-bg.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    max-height: 760px
+    img
+      display: block
+    .left-top_block__content
+      box-sizing: border-box
+      float: right
+      background-color: $white
+      padding: 40px 0 0px 90px
+      width: 430px
+      height: 375px
+      margin-top: 45px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        background-image: url(../img/strip-big.png)
+        width: 82px
+        height: 111px
+        top: -50px
+        left: 50px
+      p
+        text-transform: uppercase
+      h2
+        position: absolute
+        content: ''
+        font-size: em(36px)
+        line-height: 48px
+        text-transform: uppercase
+        width: 445px
+        top: 120px
+        right: -103px
+  .right-top_block
+    float: left
+    width: 50%
+    max-height: 760px
+    box-sizing: border-box
+    padding: 40px  45px 300px 0
+    background-color: $yellov
+    text-align: right
+    .right-top_block__content
+      padding-top: 90px
+      text-align: left
+      width: 430px
+      margin: 0 auto
+      h3
+        text-transform: uppercase
+      .line
+        display: block
+        background-color: $white
+        height: 5px
+        margin: 90px 0 25px 0
+      .Thin
+        font-size: em(15px)
+
+//Analytics
+.analytics
+  margin-top: 50px
+
+.analytics-left__content
+  width: 70%
+  .first-block
+    padding: 45px 260px 50px 124px
+    background-color: $gray
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      bottom: -380px
+      right: 0
+      background-image: url(../img/second-block-bg.jpg)
+      width: 271px
+      height: 580px
+    h4
+      font-size: em(14px)
+      text-transform: uppercase
+    .analytics-block__wrapp
+      .block1
+        margin-right: 45px
+      .block1, .block2
+        display: inline-block
+        width: 250px
+        margin-bottom: 90px
+        margin-top: 50px
+        padding: 0 20px
+      .block3
+        width: 395px
+        padding: 0 20px
+      .analytics-block__content
+        background-color: $white
+        font-family: "Neris-Light", sans-serif
+        height: 117px
+        p
+          font-size: em(106px)
+          line-height: 100px
+          margin: 0
+          position: relative
+          top: -50px
+        span
+          font-size: em(14px)
+          position: relative
+          top: -25px
+          font-weight: bold
+.analytics-left__content
+  .second-block
+    padding-left: 124px
+    padding-top: 50px
+    width: 70%
+    p
+      font-family: "Neris-Light", sans-serif
+      line-height: 30px
+      font-weight: bold
+      .yellow-bg
+        background-color: $yellov
+
+.analytics-left__content
+  .table-analytics
+    margin-top: 200px
+    padding-left: 124px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .table-block
+      background-color: $gray
+      width: 33%
+      text-align: left
+      margin: 0.3% 0
+      padding: 15px 80px
+      .Light
+        font-size: em(14px)
+        margin: 0
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .text-center
+      text-align: center
+
+.analytics-left__content
+  .fourth-block
+    padding-left: 124px
+    margin-top: 50px
+    img
+      float: left
+      margin-right: 20px
+
+
+@import "media" // Всегда в конце
