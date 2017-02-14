@@ -44,6 +44,7 @@ body
   font-family: "Neris-Thin", sans-serif
 .Light
   font-family: "Neris-Light", sans-serif
+  font-weight: lighter
 .Lightitalic
   font-family: "Neris-Lightitalic", sans-serif
 .SemiBold
@@ -117,6 +118,7 @@ header
         margin: 90px 0 25px 0
       .Thin
         font-size: em(15px)
+
 
 //Analytics
 .analytics
@@ -251,32 +253,160 @@ header
         background-repeat: no-repeat
 
 
-//ROL
-.rol
+//roi
+.roi
 	background-color: $yellov
 	margin-top: 140px
-	padding: 50px 0 45px 0
+	padding: 90px 0 45px 0
 	padding-left: 124px
-	.rol-wrapp
+	.roi-wrapp
 		width: 70%
 		background-color: $white
-		.rol-left
-			display: inline-block
+		display: flex
+		.roi-left
+			padding-left: 30px
 			h2
 				font-size: em(106px)
-				line-height: 100px
 				margin: 0
+				position: relative
+				top: -90px
+				left: -10px
 			ul
 				padding: 0
 				list-style: none
-		.rol-right
-			display: inline-block
-.rol
-	.rol-footer
+				margin: 30px 0 0 0
+				li
+					margin-bottom: 90px
+					font-size: em(14px)
+					position: relative
+					&:last-child
+						&::before
+							position: absolute
+							content: "прибыль"
+							display: block
+							font-family: "Neris-SemiBold", sans-serif
+							text-transform: uppercase
+						  font-weight: 600
+							color: $yellov
+							font-size: em(45px)
+							top: -25px
+							right: -45px
+							z-index: 1
+					span
+						position: relative
+						display: block
+						z-index: 9
+		.roi-right
+			width: 470px
+			p
+				padding-top: 30px
+				font-size: em(14px)
+			ul
+				padding: 0
+				margin: 50px 0 0 0
+				list-style: none
+				li
+					position: relative
+					z-index: 9
+					margin-bottom: 15px
+					font-size: em(60px)
+			.roi-right-bottom
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				h2
+					font-size: em(60px)
+					font-family: "Neris-Light", sans-serif
+					font-weight: lighter
+				span
+					display: block
+					margin: 0 15px
+				.roi-text-bottom
+					display: bloc
+					font-size: em(24px)
+					text-transform: uppercase
+					line-height: 24px
+					position: relative
+					top: 8px
+					&::before
+						position: absolute
+						content: ""
+						top: 5px
+						left: -5px
+						width: 50px
+						height: 15px
+						background-color: $yellov
+						z-index: 1
+					span
+						position: relative
+						z-index: 9
+			.roi-right_text-bottom
+				display: inline-block
+				margin: 0
+				padding: 0
+				margin-bottom: 20px
+				text-transform: uppercase
+				background-color: $gray
+				font-size: em(16px)
+.roi
+	.roi-footer
+		margin-top: 50px
 		width: 70%
+		p
+			padding: 0 140px 0 30px
+			font-size: em(16px)
+			font-family: "Neris-Light", sans-serif
+		  font-weight: lighter
 
-
-
+.roi2
+	.roi2-top
+		background-image: url(../img/roi2-bg.png)
+		background-size: cover
+		background-position: center
+		.roi-top-content
+			width: 70%
+			padding-left: 124px
+			padding-top: 145px
+			padding-bottom: 220px
+			h1
+				color: $white
+				font-size: em(108px)
+				text-transform: uppercase
+				padding-right: 30%
+				margin: 0
+				line-height: 140px
+.roi2-icon__wrap
+	position: relative
+	top: -100px
+	padding-left: 124px
+	width: 70%
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	text-align: center
+	.roi2-icon
+		width: 30%
+		p
+			padding: 10px 30px 20px 30px
+			font-size: em(14px)
+			font-family: "Neris-Light", sans-serif
+		  font-weight: lighter
+			background-color: $gray
+.roi2-arows
+	padding-left: 124px
+	h4
+		font-size: em(16px)
+		font-family: "SemiBold", sans-serif
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		display: flex
+		align-items: center
+		li
+			margin-top: 50px
+			line-height: 16px
+			margin-right: 20px
 
 
 
