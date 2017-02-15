@@ -6,38 +6,38 @@ $output-bourbon-deprecation-warnings: false //Ждём обновления node
 @import "vars"
 
 *::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *::-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+  color: #666
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+  color: #666
 
 html, body
-	height: 100%
+  height: 100%
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
   font-family: 'Neris-Light', sans-serif
-	overflow-x: hidden
+  overflow-x: hidden
 
 //FONTS HELPERS
 .Thin
@@ -227,10 +227,29 @@ header
       font-weight: 300
       padding-left: 30px
       text-align: right
-      width: 176px;
+      width: 235px
       padding-right: 10px
       height: 48px
       line-height: 60px
+      &:hover
+        background: $yellov
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+        position: relative
+        line-height: 60px
+        text-decoration: none
+        &:before
+          content: ''
+          position: absolute
+          display: block
+          background-image: url(../img/strip-big.png)
+          width: 36px
+          height: 51px
+          top: -15px
+          left: 20px
+          background-size: contain
+          background-repeat: no-repeat
     .active
       background: $yellov
       font-size: 18px
@@ -253,24 +272,57 @@ header
 
 //ROL
 .rol
-	background-color: $yellov
-	margin-top: 140px
-	padding: 50px 0 45px 0
-	padding-left: 124px
-	.rol-wrapp
-		width: 70%
-		background-color: $white
-		.rol-left
-			h2
-				font-size: em(106px)
-				margin: 0
-				line-height: 0
+  background-color: $yellov
+  margin-top: 140px
+  padding: 50px 0 45px 0
+  padding-left: 124px
+  .rol-wrapp
+    width: 70%
+    background-color: $white
+    .rol-left
+      h2
+        font-size: em(106px)
+        margin: 0
+        line-height: 0
 .rol
-	.rol-footer
-		width: 70%
+  .rol-footer
+    width: 70%
 
-
-
+.seo-last-block-wrap
+  background-image: url(../img/prodvigenie.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 200px 0 126px 160px
+  h2
+    color: $white
+    font-size: 88px
+    font-weight: 600
+    line-height: 83px
+    text-transform: uppercase
+    position: relative
+    span
+      position: relative
+      z-index: 2
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      width: 325px
+      height: 325px
+      border: 3px solid $yellov
+      border-radius: 50%
+      top: -160px
+      left: -25px
+      z-index: 1
+.seo-inner-wrap
+	padding: 30px 0 30px 124px
+	width: 70%
+	h3
+		color: #282828
+		font-size: 43px
+		font-weight: 600
+		line-height: 40px
+		text-transform: uppercase
 
 
 
